@@ -103,7 +103,12 @@ export default class Admin extends Component {
                     </div>
                     <div>
                         <label>Тип жесткого диска:</label>
-                        <input type="text" onChange={(e) => this.setState({ memory_type: e.target.value })} name="memory_type" />
+                        <select onChange={(e) => this.setState({ memory_type: e.target.value })}>
+                            <option value="">Не выбрано</option>
+                            <option value="SSD">SSD</option>
+                            <option value="HDD">HDD</option>
+                        </select>
+                        {/* <input type="text" onChange={(e) => this.setState({ memory_type: e.target.value })} name="memory_type" /> */}
                     </div>
                     <div>
                         <label>Объем накопителя:</label>

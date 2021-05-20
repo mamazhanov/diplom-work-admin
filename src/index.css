@@ -26,7 +26,8 @@ code {
   font-size: 20px;
   font-weight: 400;
 }
-.admin .form div input {
+.admin .form div input,
+select {
   padding: 5px 9px;
   font-size: 20px;
   border-radius: 5px;
